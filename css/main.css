@@ -21,7 +21,7 @@ header .name {
   border: 2px solid hsl(264, 82%, 70%);
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1023px) {
   header {
     gap: 16px;
   }
@@ -52,6 +52,7 @@ header .name {
 .grid-container .card-container {
   position: relative;
   border-radius: 5px;
+  width: 100%;
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -80,13 +81,14 @@ header .name {
   right: 28px;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1023px) {
   .grid-container {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
+    margin: 20px auto;
   }
   .grid-container .card-container {
     height: 100%;
@@ -142,6 +144,7 @@ html {
 
 body {
   width: 100%;
+  height: 100vh;
   text-align: left;
   font-family: "Barlow Semi Condensed";
   font-weight: 500;
@@ -151,6 +154,16 @@ body {
   align-items: center;
   padding: 20px 0px;
   background-color: hsl(210, 46%, 95%);
+}
+
+@media screen and (min-width: 1023px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
