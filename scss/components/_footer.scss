@@ -1,0 +1,9 @@
+@use '../global/colors' as *;
+
+.attribution { 
+    font-size: 11px; 
+}
+
+.attribution a { 
+    color: $moderate-violet; 
+}

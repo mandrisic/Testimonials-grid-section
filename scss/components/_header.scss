@@ -1,0 +1,39 @@
+@use '../util/mixins' as *;
+@use '../global/colors' as *;
+
+header {
+    @include customFlex(row, flex-start, center);
+    gap: 16px;
+
+    img {
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .name {
+        font-weight: 600;
+    }
+}
+
+#daniel-card .profile, #patrick-card .profile {
+    border: 2px solid $light-violet;
+}
+
+
+@media screen and (min-width: 1140px){
+    header {
+        gap: 16px;
+    
+        img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+}

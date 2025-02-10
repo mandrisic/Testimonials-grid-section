@@ -1,0 +1,23 @@
+@use '../util/mixins' as *;
+@use './colors' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    text-align: left;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 500;
+    @include customFlex(column, flex-start, center);
+    padding: 20px 0px;
+    background-color: $light-grayish-blue ;
+}
