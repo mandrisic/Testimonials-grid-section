@@ -33,12 +33,18 @@ header .name {
 }
 .attribution {
   font-size: 11px;
+  padding-bottom: 20px;
 }
 
 .attribution a {
   color: hsl(263, 55%, 52%);
 }
 
+@media screen and (min-width: 1023px) {
+  .attribution {
+    padding-bottom: 0px;
+  }
+}
 .grid-container {
   width: 88%;
   gap: 20px;
@@ -162,7 +168,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
   }
 }
 

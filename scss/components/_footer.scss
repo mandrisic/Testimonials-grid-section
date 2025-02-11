@@ -2,8 +2,15 @@
 
 .attribution { 
     font-size: 11px; 
+    padding-bottom: 20px;
 }
 
 .attribution a { 
     color: $moderate-violet; 
+}
+
+@media screen and (min-width: 1023px){
+    .attribution { 
+        padding-bottom: 0px;
+    }
 }
